@@ -1,0 +1,146 @@
+<resources>
+    <dimen name="margin_size_e25dp">-46.75dp</dimen>
+    <dimen name="margin_size_e5dp">-9.350000000000001dp</dimen>
+    <dimen name="margin_size_0.1px">0.18700000000000003px</dimen>
+    <dimen name="margin_size_0.1dp">0.18700000000000003dp</dimen>
+    <dimen name="margin_size_0.5dp">0.935dp</dimen>
+    <dimen name="margin_size_1dp">1.87dp</dimen>
+    <dimen name="margin_size_2dp">3.74dp</dimen>
+    <dimen name="margin_size_2.5dp">4.675000000000001dp</dimen>
+    <dimen name="margin_size_3dp">5.61dp</dimen>
+    <dimen name="margin_size_4dp">7.48dp</dimen>
+    <dimen name="margin_size_5dp">9.350000000000001dp</dimen>
+    <dimen name="margin_size_6dp">11.22dp</dimen>
+    <dimen name="margin_size_7dp">13.09dp</dimen>
+    <dimen name="margin_size_8dp">14.96dp</dimen>
+    <dimen name="margin_size_8dp_">-14.96dp</dimen>
+    <dimen name="margin_size_9dp">16.830000000000002dp</dimen>
+    <dimen name="margin_size_10dp">18.700000000000003dp</dimen>
+    <dimen name="margin_size_12dp">22.44dp</dimen>
+    <dimen name="margin_size_13dp">24.310000000000002dp</dimen>
+    <dimen name="margin_size_15dp">28.05dp</dimen>
+    <dimen name="margin_size_16dp">29.92dp</dimen>
+    <dimen name="margin_size_17dp">31.790000000000003dp</dimen>
+    <dimen name="margin_size_18dp">33.660000000000004dp</dimen>
+    <dimen name="activity_vertical_margin">29.92dp</dimen>
+    <dimen name="activity_horizontal_margin">29.92dp</dimen>
+    <dimen name="margin_size_20dp">37.400000000000006dp</dimen>
+    <dimen name="margin_size_20dp_">-37.400000000000006dp</dimen>
+    <dimen name="margin_size_22dp">41.14dp</dimen>
+    <dimen name="margin_size_24dp">44.88dp</dimen>
+    <dimen name="margin_size_25dp">46.75dp</dimen>
+    <dimen name="margin_size_26dp">48.620000000000005dp</dimen>
+    <dimen name="margin_size_28dp">52.36dp</dimen>
+    <dimen name="margin_size_30dp">56.1dp</dimen>
+    <dimen name="margin_size_35dp">65.45dp</dimen>
+    <dimen name="margin_size_36dp">67.32000000000001dp</dimen>
+    <dimen name="margin_size_40dp">74.80000000000001dp</dimen>
+    <dimen name="margin_size_42dp">78.54dp</dimen>
+    <dimen name="margin_size_45dp">84.15dp</dimen>
+    <dimen name="margin_size_48dp">89.76dp</dimen>
+    <dimen name="margin_size_49dp">91.63000000000001dp</dimen>
+    <dimen name="margin_size_50dp">93.5dp</dimen>
+    <dimen name="margin_size_52dp">97.24000000000001dp</dimen>
+    <dimen name="margin_size_55dp">102.85000000000001dp</dimen>
+    <dimen name="margin_size_60dp">112.2dp</dimen>
+    <dimen name="margin_size_65dp">121.55000000000001dp</dimen>
+    <dimen name="margin_size_70dp">130.9dp</dimen>
+    <dimen name="margin_size_75dp">140.25dp</dimen>
+    <dimen name="margin_size_80dp">149.60000000000002dp</dimen>
+    <dimen name="margin_size_90dp">168.3dp</dimen>
+    <dimen name="margin_size_100dp">187.0dp</dimen>
+    <dimen name="margin_size_101dp">188.87dp</dimen>
+    <dimen name="margin_size_105dp">196.35000000000002dp</dimen>
+    <dimen name="margin_size_110dp">205.70000000000002dp</dimen>
+    <dimen name="margin_size_120dp">224.4dp</dimen>
+    <dimen name="margin_size_130dp">243.10000000000002dp</dimen>
+    <dimen name="margin_size_140dp">261.8dp</dimen>
+    <dimen name="margin_size_150dp">280.5dp</dimen>
+    <dimen name="margin_size_155dp">289.85dp</dimen>
+    <dimen name="margin_size_160dp">299.20000000000005dp</dimen>
+    <dimen name="margin_size_180dp">336.6dp</dimen>
+    <dimen name="margin_size_190dp">355.3dp</dimen>
+    <dimen name="margin_size_200dp">374.0dp</dimen>
+    <dimen name="margin_size_230dp">430.1dp</dimen>
+    <dimen name="margin_size_235dp">439.45000000000005dp</dimen>
+    <dimen name="margin_size_240dp">448.8dp</dimen>
+    <dimen name="margin_size_250dp">467.5dp</dimen>
+    <dimen name="margin_size_260dp">486.20000000000005dp</dimen>
+    <dimen name="margin_size_268dp">501.16dp</dimen>
+    <dimen name="margin_size_293dp">547.9100000000001dp</dimen>
+    <dimen name="margin_size_294dp">549.7800000000001dp</dimen>
+    <dimen name="margin_size_300dp">561.0dp</dimen>
+    <dimen name="margin_size_400dp">748.0dp</dimen>
+    <!-- pull_to_refresh_header -->
+    <dimen name="indicator_right_padding">18.700000000000003dp</dimen>
+    <dimen name="indicator_corner_radius">22.44dp</dimen>
+    <dimen name="indicator_internal_padding">7.48dp</dimen>
+    <dimen name="header_footer_left_right_padding">44.88dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">22.44dp</dimen>
+    <!-- titlelayout -->
+    <dimen name="textsize">33.660000000000004dp</dimen>
+    <!-- mainactivity -->
+    <dimen name="mainactivity_tabsize">24.310000000000002sp</dimen>
+    <!-- AccountFragment or  MoreFragment -->
+    <dimen name="row_title">33.660000000000004sp</dimen>
+    <dimen name="row_sumtitle">28.05sp</dimen>
+    <dimen name="minus_margin_size_40dp">-74.80000000000001dp</dimen>
+    <!--menu dimen-->
+    <dimen name="menu_item_padding">3.74dp</dimen>
+    <dimen name="text_right_padding">52.36dp</dimen>
+    <dimen name="text_right_translation">14.96dp</dimen>
+    <dimen name="text_wrapper_right_margin">-14.96dp</dimen>
+    <dimen name="divider_height">1.87dp</dimen>
+    <dimen name="menu_text_size">28.05sp</dimen>
+    <!-- font size -->
+    <dimen name="font_size_5sp">9.350000000000001sp</dimen>
+    <dimen name="font_size_8sp">14.96sp</dimen>
+    <dimen name="font_size_10sp">18.700000000000003sp</dimen>
+    <dimen name="font_size_11sp">20.57sp</dimen>
+    <dimen name="font_size_12sp">22.44sp</dimen>
+    <dimen name="font_size_13sp">24.310000000000002sp</dimen>
+    <dimen name="font_size_14sp">26.18sp</dimen>
+    <dimen name="font_size_15sp">28.05sp</dimen>
+    <dimen name="font_size_16sp">29.92sp</dimen>
+    <dimen name="font_size_17sp">31.790000000000003sp</dimen>
+    <dimen name="font_size_18sp">33.660000000000004sp</dimen>
+    <dimen name="font_size_19sp">35.53sp</dimen>
+    <dimen name="font_size_20sp">37.400000000000006sp</dimen>
+    <dimen name="font_size_25sp">46.75sp</dimen>
+    <dimen name="font_size_30sp">56.1sp</dimen>
+    <dimen name="font_size_48sp">89.76sp</dimen>
+    <dimen name="LargeTextSize">29.92dp</dimen>
+    <dimen name="BasicTextSize">28.05dp</dimen>
+    <dimen name="TitleTextSize">33.660000000000004dp</dimen>
+    <dimen name="SmallTextSize">26.18dp</dimen>
+    <dimen name="SmallerTextSize">24.310000000000002dp</dimen>
+    <dimen name="LargestTextSize">56.1dp</dimen>
+    <dimen name="ChattingTextSize">29.92dp</dimen>
+    <dimen name="ChattingContentMinHeight">91.63000000000001dp</dimen>
+    <dimen name="PreferenceItemHeight">78.54dp</dimen>
+    <dimen name="ConversationItemHeight">108.46000000000001dp</dimen>
+    <dimen name="LargeAvatarSize">104.72dp</dimen>
+    <dimen name="thumnail_default_width">187.0dp</dimen>
+    <dimen name="thumnail_default_height">187.0dp</dimen>
+    <dimen name="margin">0.18700000000000003dp</dimen>
+    <!-- The width that is used when creating thumbnails of applications. -->
+    <dimen name="thumbnail_width">157.08dp</dimen>
+    <!-- The height that is used when creating thumbnails of applications. -->
+    <dimen name="thumbnail_height">117.81dp</dimen>
+    <!-- The standard size (both width and height) of an application icon that         will be displayed in the app launcher and elsewhere. -->
+    <dimen name="app_icon_size">89.76dp</dimen>
+    <dimen name="toast_y_offset">119.68dp</dimen>
+    <dimen name="title_height">89.76dp</dimen>
+    <!-- Height of the status bar -->
+    <dimen name="status_bar_height">46.75dp</dimen>
+    <!-- Size of the fastscroll hint letter -->
+    <dimen name="fastscroll_overlay_size">194.48000000000002dp</dimen>
+    <!-- Width of the fastscroll thumb -->
+    <dimen name="fastscroll_thumb_width">119.68dp</dimen>
+    <!-- Height of the fastscroll thumb -->
+    <dimen name="fastscroll_thumb_height">97.24000000000001dp</dimen>
+    <dimen name="button_text_size">26.18sp</dimen>
+    <dimen name="expand_tab_item_height">84.15dp</dimen>
+    <dimen name="expand_tab_eara_height">710.6dp</dimen>
+    <dimen name="head_bar_height">84.15dp</dimen>
+</resources>

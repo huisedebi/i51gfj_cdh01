@@ -1,0 +1,146 @@
+<resources>
+    <dimen name="margin_size_e25dp">-56.25dp</dimen>
+    <dimen name="margin_size_e5dp">-11.25dp</dimen>
+    <dimen name="margin_size_0.1px">0.225px</dimen>
+    <dimen name="margin_size_0.1dp">0.225dp</dimen>
+    <dimen name="margin_size_0.5dp">1.125dp</dimen>
+    <dimen name="margin_size_1dp">2.25dp</dimen>
+    <dimen name="margin_size_2dp">4.5dp</dimen>
+    <dimen name="margin_size_2.5dp">5.625dp</dimen>
+    <dimen name="margin_size_3dp">6.75dp</dimen>
+    <dimen name="margin_size_4dp">9.0dp</dimen>
+    <dimen name="margin_size_5dp">11.25dp</dimen>
+    <dimen name="margin_size_6dp">13.5dp</dimen>
+    <dimen name="margin_size_7dp">15.75dp</dimen>
+    <dimen name="margin_size_8dp">18.0dp</dimen>
+    <dimen name="margin_size_8dp_">-18.0dp</dimen>
+    <dimen name="margin_size_9dp">20.25dp</dimen>
+    <dimen name="margin_size_10dp">22.5dp</dimen>
+    <dimen name="margin_size_12dp">27.0dp</dimen>
+    <dimen name="margin_size_13dp">29.25dp</dimen>
+    <dimen name="margin_size_15dp">33.75dp</dimen>
+    <dimen name="margin_size_16dp">36.0dp</dimen>
+    <dimen name="margin_size_17dp">38.25dp</dimen>
+    <dimen name="margin_size_18dp">40.5dp</dimen>
+    <dimen name="activity_vertical_margin">36.0dp</dimen>
+    <dimen name="activity_horizontal_margin">36.0dp</dimen>
+    <dimen name="margin_size_20dp">45.0dp</dimen>
+    <dimen name="margin_size_20dp_">-45.0dp</dimen>
+    <dimen name="margin_size_22dp">49.5dp</dimen>
+    <dimen name="margin_size_24dp">54.0dp</dimen>
+    <dimen name="margin_size_25dp">56.25dp</dimen>
+    <dimen name="margin_size_26dp">58.5dp</dimen>
+    <dimen name="margin_size_28dp">63.0dp</dimen>
+    <dimen name="margin_size_30dp">67.5dp</dimen>
+    <dimen name="margin_size_35dp">78.75dp</dimen>
+    <dimen name="margin_size_36dp">81.0dp</dimen>
+    <dimen name="margin_size_40dp">90.0dp</dimen>
+    <dimen name="margin_size_42dp">94.5dp</dimen>
+    <dimen name="margin_size_45dp">101.25dp</dimen>
+    <dimen name="margin_size_48dp">108.0dp</dimen>
+    <dimen name="margin_size_49dp">110.25dp</dimen>
+    <dimen name="margin_size_50dp">112.5dp</dimen>
+    <dimen name="margin_size_52dp">117.0dp</dimen>
+    <dimen name="margin_size_55dp">123.75dp</dimen>
+    <dimen name="margin_size_60dp">135.0dp</dimen>
+    <dimen name="margin_size_65dp">146.25dp</dimen>
+    <dimen name="margin_size_70dp">157.5dp</dimen>
+    <dimen name="margin_size_75dp">168.75dp</dimen>
+    <dimen name="margin_size_80dp">180.0dp</dimen>
+    <dimen name="margin_size_90dp">202.5dp</dimen>
+    <dimen name="margin_size_100dp">225.0dp</dimen>
+    <dimen name="margin_size_101dp">227.25dp</dimen>
+    <dimen name="margin_size_105dp">236.25dp</dimen>
+    <dimen name="margin_size_110dp">247.5dp</dimen>
+    <dimen name="margin_size_120dp">270.0dp</dimen>
+    <dimen name="margin_size_130dp">292.5dp</dimen>
+    <dimen name="margin_size_140dp">315.0dp</dimen>
+    <dimen name="margin_size_150dp">337.5dp</dimen>
+    <dimen name="margin_size_155dp">348.75dp</dimen>
+    <dimen name="margin_size_160dp">360.0dp</dimen>
+    <dimen name="margin_size_180dp">405.0dp</dimen>
+    <dimen name="margin_size_190dp">427.5dp</dimen>
+    <dimen name="margin_size_200dp">450.0dp</dimen>
+    <dimen name="margin_size_230dp">517.5dp</dimen>
+    <dimen name="margin_size_235dp">528.75dp</dimen>
+    <dimen name="margin_size_240dp">540.0dp</dimen>
+    <dimen name="margin_size_250dp">562.5dp</dimen>
+    <dimen name="margin_size_260dp">585.0dp</dimen>
+    <dimen name="margin_size_268dp">603.0dp</dimen>
+    <dimen name="margin_size_293dp">659.25dp</dimen>
+    <dimen name="margin_size_294dp">661.5dp</dimen>
+    <dimen name="margin_size_300dp">675.0dp</dimen>
+    <dimen name="margin_size_400dp">900.0dp</dimen>
+    <!-- pull_to_refresh_header -->
+    <dimen name="indicator_right_padding">22.5dp</dimen>
+    <dimen name="indicator_corner_radius">27.0dp</dimen>
+    <dimen name="indicator_internal_padding">9.0dp</dimen>
+    <dimen name="header_footer_left_right_padding">54.0dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">27.0dp</dimen>
+    <!-- titlelayout -->
+    <dimen name="textsize">40.5dp</dimen>
+    <!-- mainactivity -->
+    <dimen name="mainactivity_tabsize">29.25sp</dimen>
+    <!-- AccountFragment or  MoreFragment -->
+    <dimen name="row_title">40.5sp</dimen>
+    <dimen name="row_sumtitle">33.75sp</dimen>
+    <dimen name="minus_margin_size_40dp">-90.0dp</dimen>
+    <!--menu dimen-->
+    <dimen name="menu_item_padding">4.5dp</dimen>
+    <dimen name="text_right_padding">63.0dp</dimen>
+    <dimen name="text_right_translation">18.0dp</dimen>
+    <dimen name="text_wrapper_right_margin">-18.0dp</dimen>
+    <dimen name="divider_height">2.25dp</dimen>
+    <dimen name="menu_text_size">33.75sp</dimen>
+    <!-- font size -->
+    <dimen name="font_size_5sp">11.25sp</dimen>
+    <dimen name="font_size_8sp">18.0sp</dimen>
+    <dimen name="font_size_10sp">22.5sp</dimen>
+    <dimen name="font_size_11sp">24.75sp</dimen>
+    <dimen name="font_size_12sp">27.0sp</dimen>
+    <dimen name="font_size_13sp">29.25sp</dimen>
+    <dimen name="font_size_14sp">31.5sp</dimen>
+    <dimen name="font_size_15sp">33.75sp</dimen>
+    <dimen name="font_size_16sp">36.0sp</dimen>
+    <dimen name="font_size_17sp">38.25sp</dimen>
+    <dimen name="font_size_18sp">40.5sp</dimen>
+    <dimen name="font_size_19sp">42.75sp</dimen>
+    <dimen name="font_size_20sp">45.0sp</dimen>
+    <dimen name="font_size_25sp">56.25sp</dimen>
+    <dimen name="font_size_30sp">67.5sp</dimen>
+    <dimen name="font_size_48sp">108.0sp</dimen>
+    <dimen name="LargeTextSize">36.0dp</dimen>
+    <dimen name="BasicTextSize">33.75dp</dimen>
+    <dimen name="TitleTextSize">40.5dp</dimen>
+    <dimen name="SmallTextSize">31.5dp</dimen>
+    <dimen name="SmallerTextSize">29.25dp</dimen>
+    <dimen name="LargestTextSize">67.5dp</dimen>
+    <dimen name="ChattingTextSize">36.0dp</dimen>
+    <dimen name="ChattingContentMinHeight">110.25dp</dimen>
+    <dimen name="PreferenceItemHeight">94.5dp</dimen>
+    <dimen name="ConversationItemHeight">130.5dp</dimen>
+    <dimen name="LargeAvatarSize">126.0dp</dimen>
+    <dimen name="thumnail_default_width">225.0dp</dimen>
+    <dimen name="thumnail_default_height">225.0dp</dimen>
+    <dimen name="margin">0.225dp</dimen>
+    <!-- The width that is used when creating thumbnails of applications. -->
+    <dimen name="thumbnail_width">189.0dp</dimen>
+    <!-- The height that is used when creating thumbnails of applications. -->
+    <dimen name="thumbnail_height">141.75dp</dimen>
+    <!-- The standard size (both width and height) of an application icon that         will be displayed in the app launcher and elsewhere. -->
+    <dimen name="app_icon_size">108.0dp</dimen>
+    <dimen name="toast_y_offset">144.0dp</dimen>
+    <dimen name="title_height">108.0dp</dimen>
+    <!-- Height of the status bar -->
+    <dimen name="status_bar_height">56.25dp</dimen>
+    <!-- Size of the fastscroll hint letter -->
+    <dimen name="fastscroll_overlay_size">234.0dp</dimen>
+    <!-- Width of the fastscroll thumb -->
+    <dimen name="fastscroll_thumb_width">144.0dp</dimen>
+    <!-- Height of the fastscroll thumb -->
+    <dimen name="fastscroll_thumb_height">117.0dp</dimen>
+    <dimen name="button_text_size">31.5sp</dimen>
+    <dimen name="expand_tab_item_height">101.25dp</dimen>
+    <dimen name="expand_tab_eara_height">855.0dp</dimen>
+    <dimen name="head_bar_height">101.25dp</dimen>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shop_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/margin_size_60dp">
+    <TextView
+        android:id="@+id/tv_cz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="充值"
+        android:textColor="@color/black"
+        android:padding="@dimen/margin_size_12dp"
+        />
+    <TextView
+        android:id="@+id/tv_num"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="+0.55"
+    android:textColor="@color/black"
+    android:padding="@dimen/margin_size_12dp"
+        android:layout_alignParentRight="true"
+    />
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2015-06-11 03:50:52"
+        android:layout_below="@id/tv_cz"
+        android:layout_marginLeft="@dimen/margin_size_12dp"
+        />
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="会员充值已入帐"
+        android:layout_below="@id/tv_cz"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_size_12dp"
+        />
+</RelativeLayout>
+    <View
+        android:layout_marginTop="@dimen/margin_size_8dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_1dp"
+        android:background="@color/line2">
+    </View>
+
+
+
+</LinearLayout>

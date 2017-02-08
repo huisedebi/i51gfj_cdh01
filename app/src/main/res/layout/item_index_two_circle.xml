@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/navigation_layout1"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_nav1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_nav1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                tools:background="@drawable/img01" />
+
+            <TextView
+                android:id="@+id/tv_nav1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_nav2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_nav2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                tools:background="@drawable/img01" />
+
+            <TextView
+                android:id="@+id/tv_nav2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_nav3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_nav3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                tools:background="@drawable/img01" />
+
+            <TextView
+                android:id="@+id/tv_nav3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_nav4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_nav4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                tools:background="@drawable/img01" />
+
+            <TextView
+                android:id="@+id/tv_nav4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/navigation_layout2"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_nav5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_nav5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                tools:background="@drawable/img01" />
+
+            <TextView
+                android:id="@+id/tv_nav5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_nav6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_nav6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                tools:background="@drawable/img01" />
+
+            <TextView
+                android:id="@+id/tv_nav6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_nav7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_nav7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                tools:background="@drawable/img01" />
+
+            <TextView
+                android:id="@+id/tv_nav7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_nav8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_nav8"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                tools:background="@drawable/img01" />
+
+            <TextView
+                android:id="@+id/tv_nav8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

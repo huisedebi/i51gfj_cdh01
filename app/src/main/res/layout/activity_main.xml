@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+    <include layout="@layout/top_bar"></include>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_nothing"
+    android:background="@color/line2"
+    android:visibility="gone"
+  >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/nothin"
+        android:layout_above="@+id/tv_centent"
+        />
+    <TextView
+        android:id="@+id/tv_centent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="没有任何信息"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
+    <LinearLayout
+        android:id="@+id/layout_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_1dp"
+        android:background="@color/line3">
+    </View>
+    <com.i51gfj.www.view.ExpandTabView
+        android:id="@+id/expandtab_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hello" />
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/spl_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></Spinner>
+            <Spinner
+                android:id="@+id/spl_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></Spinner>
+
+        </LinearLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/adress"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_size_30dp"
+            tools:text="当前：思明区塔普社区"
+            android:textColor="@color/black"
+            android:padding="@dimen/margin_size_6dp"/>
+        <ImageView
+
+            android:id="@+id/img_frash"
+            android:layout_width="@dimen/margin_size_20dp"
+            android:layout_height="@dimen/margin_size_20dp"
+            android:src="@drawable/ic_frash"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/margin_size_10dp"/>
+    </RelativeLayout>
+    <com.i51gfj.www.view.pulltorefresh.PullToRefreshScrollView
+        android:id="@+id/pull_to_refresh_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </com.i51gfj.www.view.pulltorefresh.PullToRefreshScrollView>
+
+
+    </LinearLayout>
+</LinearLayout>

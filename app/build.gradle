@@ -1,0 +1,106 @@
+apply plugin: 'com.android.application'
+
+android {
+    dexOptions { javaMaxHeapSize "4g" }
+    useLibrary 'org.apache.http.legacy'
+    signingConfigs {
+        ReleaseKey {
+            keyAlias '我的梦想'
+            keyPassword 'KEYSTORE_PASSWORD'
+            storeFile file('D:/app/release/mykey')
+            storePassword 'KEY_PASSWORD'
+        }
+        DebugKey {
+            keyAlias '我的梦想'
+            keyPassword '198855'
+            storeFile file('D:/app/release/mykey')
+            storePassword '198855'
+        }
+    }
+    defaultConfig {
+        multiDexEnabled true
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    defaultConfig {
+        applicationId "com.i51gfj.www"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 2018020801
+        versionName "5.1.6"
+        aaptOptions.cruncherEnabled = false
+        aaptOptions.useNewCruncher = false
+    }
+    sourceSets {
+        main() {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+//    lintOptions {
+//        abortOnError false
+//    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    /*   compile files('libs/ShareSDK-QQ-2.6.3.jar')
+        compile files('libs/ShareSDK-Core-2.6.3.jar')
+        compile files('libs/ShareSDK-ShortMessage-2.6.3.jar')
+        compile files('libs/ShareSDK-SinaWeibo-2.6.3.jar')
+        compile files('libs/ShareSDK-Wechat-Moments-2.6.3.jar')
+        compile files('libs/ShareSDK-Wechat-Core-2.6.3.jar')
+        compile files('libs/ShareSDK-Wechat-2.6.3.jar')*/
+    compile files('libs/MobTools.jar')
+    compile files('libs/Event.jar')
+    compile files('libs/jpush-android-2.1.7.jar')
+    compile files('libs/locSDK_6.13.jar')
+    compile files('libs/SocialSDK_QQZone_3.jar')
+    compile files('libs/SocialSDK_WeiXin_2.jar')
+    compile files('libs/weixinpay.jar')
+    compile files('libs/picasso-2.4.0.jar')
+    compile files('libs/MobLogCollector.jar')
+    compile files('libs/MobTools.jar')
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.android.support:design:23.2.1'
+    //compile 'com.squareup.okhttp3:okhttp:3.1.2'
+    //compile 'com.squareup.okio:okio:1.7.0'
+    compile 'com.google.code.gson:gson:2.5'
+    //compile 'com.alibaba:fastjson:1.1.46.android'
+    compile 'com.zhy:okhttputils:2.2.0'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile files('libs/utdid4all-1.0.4.jar')
+    compile files('libs/securityguard-3.1.27.jar')
+    compile files('libs/sdk-legacy-support-1.9.0.jar')
+    compile files('libs/alisdk-ut-5.jar')
+    compile files('libs/alisdk-trade-11.jar')
+    compile files('libs/alisdk-system-14.jar')
+    compile files('libs/alisdk-security-8.jar')
+    compile files('libs/alisdk-rpc-3.jar')
+    compile files('libs/alisdk-login-7.jar')
+    compile files('libs/alisdk-kernel-1.9.0.jar')
+    compile files('libs/alisdk-hotpatch-3.jar')
+    compile files('libs/alisdk-alipay-2.jar')
+    compile files('libs/alipaySDK-20150818.jar')
+    //compile files('libs/AMap_2DMap_V2.9.0_20160525.jar')
+    compile 'org.apache.httpcomponents:httpcore:4.3.2'
+    //compile files('libs/BaiduNaviSDK_3.2.0.jar')
+    compile files('libs/baidumapapi_util_v4_0_0.jar')
+    compile files('libs/baidumapapi_base_v3_6_1.jar')
+    compile files('libs/baidumapapi_map_v3_6_1.jar')
+    compile files('libs/baidumapapi_search_v3_6_1.jar')
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile files('libs/QyxWeight1.jar')
+    compile 'com.android.support:multidex:1.0.1'
+    compile project(':Rong_Cloud_Android_IMKit_SDK_v2_7_3_stable')
+    compile 'com.youth.banner:banner:1.4.1'
+    compile files('libs/MiPush_SDK_Client_3_1_2.jar')
+    //compile 'com.umeng.analytics:analytics:latest.integration'
+}

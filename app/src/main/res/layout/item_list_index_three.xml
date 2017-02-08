@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shop_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_12dp"
+        android:background="@color/line2"
+        />
+    <RelativeLayout
+        android:id="@+id/item_list_index_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="gone"
+      >
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_size_1dp"
+            android:layout_marginTop="@dimen/margin_size_10dp"
+            android:background="@color/line2"
+            android:visibility="gone"></View>
+
+        <TextView
+            android:id="@+id/tv_where"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:layout_margin="@dimen/margin_size_10dp"
+            tools:text="他铺路斯蒂芬森防守对方" />
+
+        <ImageView
+            android:id="@+id/img_frash"
+            android:layout_width="@dimen/margin_size_20dp"
+            android:layout_height="@dimen/margin_size_20dp"
+            android:layout_alignBottom="@+id/tv_where"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:src="@drawable/ic_frash" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_size_12dp"
+            android:layout_below="@id/img_frash"
+            android:layout_marginTop="@dimen/margin_size_10dp"
+            android:background="@color/line2"></View>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/index_three_big"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_180dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#88ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/index_three_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="烤鱼外卖" />
+
+        <TextView
+            android:id="@+id/index_three_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:layout_marginTop="-10dp"
+            android:text="厦门" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="6dp">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/index_heart"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="关注度"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/index_three_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="28"
+                android:textColor="@color/txt_titlebar_red"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/index_good"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="推荐度"
+                android:textSize="15sp" />
+            />
+
+            <ImageView
+                android:id="@+id/img_star"
+                android:layout_width="55dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="6dp"
+                tools:background="@drawable/star5"
+                android:scaleType="centerInside" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/index_juli"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6dp"
+                android:text="距离"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/index_three_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="20.71公里"
+                android:textColor="@color/txt_titlebar_red"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_size_15dp"
+        android:text="内容介绍" />
+
+    <TextView
+        android:id="@+id/tv_remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_size_10dp"
+        android:paddingLeft="@dimen/margin_size_15dp"
+        tools:text="测试" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_10dp"
+        android:background="@color/line2"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout_phone"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_size_15dp"
+        android:paddingLeft="@dimen/margin_size_15dp"
+        android:layout_marginTop="@dimen/margin_size_15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电话:" />
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_size_15dp"
+            android:hint="13959657132" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_10dp"
+        android:background="@color/line2"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_size_15dp"
+            android:text="红包金额" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="@dimen/margin_size_15dp"
+            android:textColor="@color/index_main"
+            android:textSize="@dimen/font_size_17sp"
+            tools:text="0.01" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_120dp"
+        android:background="@color/line2">
+
+        <Button
+            android:id="@+id/bt_lingqu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_size_40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_size_15dp"
+            android:layout_marginRight="@dimen/margin_size_15dp"
+            android:background="@drawable/corner_white_5dp_red"
+            android:text="立即领取红包"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/bt_yilingqu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_size_40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_size_15dp"
+            android:layout_marginRight="@dimen/margin_size_15dp"
+            android:background="@drawable/corner_mine_5dp_gred"
+            android:clickable="false"
+            android:text="已经领取"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>

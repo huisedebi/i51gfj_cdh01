@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <include
+        android:id="@+id/bar_title"
+        layout="@layout/top_bar" />
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_map">
+    </FrameLayout>
+    <TextView
+        android:id="@+id/tv_name"
+        android:padding="@dimen/margin_size_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="地址"
+        />
+    <TextView
+        android:id="@+id/tv_address"
+        android:paddingLeft="@dimen/margin_size_10dp"
+        android:paddingBottom="@dimen/margin_size_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="地址"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_1dp"
+        android:background="@color/line3"
+        ></View>
+    <TextView
+        android:id="@+id/tv_gomap"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_45dp"
+        android:text="查看路线以及周边"
+        android:gravity="center"
+        />
+</LinearLayout>

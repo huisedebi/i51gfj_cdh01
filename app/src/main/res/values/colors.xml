@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="btn_red_press">#96124e</drawable>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 单色 -->
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="white_dm">#88ffffff</color>
+    <color name="gray">#eeeeee</color>
+    <color name="gray_deep">#999999</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- 其他 -->
+    <color name="grey">#808080</color>
+    <color name="blue">#ff33b5e5</color>
+    <color name="pay">#f793c7</color>
+    <color name="gray_text">#9e9e9e</color>
+    <color name="btn_text">#009e9e9e</color>
+    <color name="time_text">#cbcbcb</color>
+    <color name="line1">#f3f3f3</color>
+    <color name="line2">#eeeeee</color>
+    <color name="line3">#e1e1e1</color>
+    <color name="line4">#CACACB</color>
+    <color name="tab_selected">#ff67b6</color>
+    <color name="tab_btn">#bcbcbc</color>
+    <color name="tab_normal">#B7B7B7</color>
+    <color name="app_text">#f792c6</color>
+    <color name="app_bg">#f8f8f8</color>
+    <color name="bg_layout">#efeff4</color>
+    <color name="bg_popup">#fafafa</color>
+    <color name="index_main">#ff4500</color>
+    <color name="bg_tab">#f5f5f5</color>
+    <color name="bar_top_bg">#FE68B9</color>
+    <color name="bar_tittle_bg">#FE67B5</color>
+    <color name="bg_network_error_normal">#fff9e0</color>
+    <color name="bg_network_error_pressed">#f4edd0</color>
+
+    <!-- dna -->
+    <color name="txt_dna_tizi_noshow">#a4528c</color>
+    <color name="txt_while">#ffffff</color>
+    <color name="txt_titlebar_red">#dc1472</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="dimgray">#ff696969</color>
+
+    <color name="popup_main_background">#b0000000</color>
+    <color name="choose_eara_item_press_color">#f4f4f4</color>
+    <color name="no_color">#00000000</color>
+
+    <!-- 主色 -->
+    <color name="the_main_color_normal">#ff4d4d</color>
+    <color name="the_main_color_selected">#ff4d4d</color>
+
+    <color name="the_main_color_black_normal">#3a3a3a</color>
+    <color name="the_main_color_black_selected">#2d2d2d</color>
+
+    <color name="the_red_color_normal">#dd594d</color>
+    <color name="the_red_color_selected">#c24135</color>
+
+    <!-- 背景颜色  -->
+    <color name="page_bg_normal">#f5f5f9</color>
+    <color name="the_color_normal">#8d8d8d</color>
+    <color name="the_color_white">#FFFFFF</color>
+    <color name="the_color_gray">#aeaeae</color>
+    <color name="the_color_pale_grey">#eae7e7</color>
+    <color name="the_color_pale_gray">#d8d5d5</color>
+    <color name="the_color_black">#000000</color>
+    <color name="the_color_blue_dark">#4b5f9c</color>
+    <color name="list_selector">#D9D9D9</color>
+    <color name="circle_bg">#EEEBE6</color>
+    <color name="CLR323232">#323232</color>
+    <color name="CLR6E82AB">#6E82AB</color>
+    <color name="CLR006AE8">#006ae8</color>
+    <color name="CLRDADADA">#DADADA</color>
+    <color name="CLR8C8C8C">#8C8C8C</color>
+    <color name="CLRD7000000">#d7000000</color>
+    <color name="CLR252525">#252525</color>
+    <color name="CLR818181">#818181</color>
+    <color name="reply_name_color">#586b96</color>
+    <color name="CLR322A34">#322A34</color>
+    <color name="CLR363737">#363737</color>
+    <color name="CLR282929">#282929</color>
+    <color name="the_color_red">#fa0718</color>
+    <color name="the_color_blue">#3E9DE1</color>
+    <color name="the_color_red_not_seleted">#f9aea5</color>
+    <color name="CLR02C70C">#02C70C</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="btn_open_red_normal">#fcdb6a</color>
+    <color name="btn_open_red_selected">#ebc542</color>
+    <color name="background_tab_pressed">#6645C01A</color>
+    <color name="red_text_color">#fdd720</color>
+
+    <!-- 布局分割线 -->
+    <color name="layout_division_view">#CACACA</color>
+    <color name="received_status">#848484</color>
+    <color name="file_size_text">#9C9B9B</color>
+    <color name="emoji_selector_bg_gray">#EBEBEB</color>
+    <color name="location_text_background">#99000000</color>
+    <color name="dialog_layout_select_bg">#E2E3E3</color>
+    <color name="dialog_layout_text_color">#474748</color>
+    <color name="btn_gray_selector_bg">#9b9b9b</color>
+    <color name="btn_gray_bg">#babbbb</color>
+    <color name="line_view_bg">#B0B0B0</color>
+    <color name="send_bottom_bg">#F0F0F0</color>
+    <color name="edit_text_selector">#C5C5C5</color>
+    <color name="lbs_btn_normal_selector_bg">#c7680d</color>
+    <color name="btn_normal_selector_bg">#A0833A</color>
+    <color name="page_normal_color">#d2d2d2</color>
+    <color name="page_select_color">#5a7ba7</color>
+    <color name="btn_red_selector_bg">#a83c36</color>
+    <color name="btn_red_bg">#EE524D</color>
+    <!-- talk emoji -->
+    <color name="selected_bg">#D9D9D9</color>
+    <color name="default_text">#B5B4B4</color>
+</resources>

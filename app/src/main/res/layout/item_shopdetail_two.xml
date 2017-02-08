@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shop_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/item_list_index_rl"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/sjtj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商家推荐"
+
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/db_2"
+            android:layout_alignTop="@+id/sjtj"
+            android:layout_toLeftOf="@+id/sjtj"
+            android:layout_toStartOf="@+id/sjtj"
+            android:id="@+id/imageView" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recommended Merchant"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignLeft="@+id/sjtj"
+            android:layout_alignStart="@+id/sjtj" />
+
+
+
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/index_three_big"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:background="#88ffffff"
+            >
+            <TextView
+                android:id="@+id/index_three_title"
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="烤鱼外卖"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                >
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/index_heart"
+                    android:scaleType="centerInside"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关注度"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/index_three_collect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="28"
+                    android:layout_marginLeft="6dp"
+                    android:textColor="@color/txt_titlebar_red"
+                    android:textSize="15sp"
+                    />
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/index_good"
+                    android:layout_marginLeft="6dp"
+                    android:scaleType="centerInside"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="推荐度"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="15sp"
+                    />
+                />
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/star5"
+                    android:scaleType="centerInside"
+                    android:layout_marginLeft="6dp"
+                    />
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/index_juli"
+                    android:layout_marginLeft="6dp"
+                    android:scaleType="centerInside"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="距离"
+                    android:layout_marginLeft="6dp"
+                    android:layout_gravity="center"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/index_three_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20.71公里"
+                    android:textColor="@color/txt_titlebar_red"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

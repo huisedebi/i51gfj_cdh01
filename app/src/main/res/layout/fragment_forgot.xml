@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+
+    <include
+        android:id="@+id/bar_title"
+        layout="@layout/top_bar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/line1"
+        android:layout_below="@+id/bar_title"
+        android:id="@+id/view">
+
+    </View>
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="14dp"
+        android:text="忘记密码"
+        android:textSize="30sp"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/tv_tip_el"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="14dp"
+        android:text="SIGN UP NOW"
+        android:textSize="13sp"
+        android:layout_below="@+id/tv_tip"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/tv_tip_el"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_input"
+        android:hint="请输入手机号"
+        android:inputType="phone"
+        android:paddingLeft="14dp"
+        android:textColorHint="@color/line4"
+        android:drawableLeft="@drawable/login_phone"
+        android:drawablePadding="@dimen/margin_size_8dp"/>
+
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_input"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:paddingLeft="14dp"
+        android:layout_below="@+id/et_code"
+        android:layout_alignRight="@+id/btn_code"
+        android:layout_alignEnd="@+id/btn_code"
+        android:textColorHint="@color/line4"
+        android:drawableLeft="@drawable/login_psw"
+        android:drawablePadding="@dimen/margin_size_8dp"/>
+    <EditText
+        android:id="@+id/sure_et_password"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_input"
+        android:hint="确认密码"
+        android:inputType="textPassword"
+        android:paddingLeft="14dp"
+        android:layout_below="@+id/et_password"
+        android:layout_alignRight="@+id/btn_code"
+        android:layout_alignEnd="@+id/btn_code"
+        android:textColorHint="@color/line4"
+        android:drawableLeft="@drawable/login_psw"
+        android:drawablePadding="@dimen/margin_size_8dp"/>
+
+
+
+
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/corner_white_25dp_red"
+        android:text="立即修改"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/et_password"
+        android:layout_alignStart="@+id/et_password"
+        android:layout_marginBottom="44dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <EditText
+        android:id="@+id/et_code"
+        android:layout_width="195dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_input"
+        android:hint="请填写手机验证码"
+        android:inputType="textPassword"
+        android:paddingLeft="14dp"
+        android:layout_below="@+id/et_phone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/btn_code"
+        android:layout_toStartOf="@+id/btn_code"
+        android:textColorHint="@color/line4"
+        android:drawableLeft="@drawable/login_phone"
+        android:drawablePadding="@dimen/margin_size_8dp"
+        />
+
+    <Button
+        android:id="@+id/btn_code"
+        android:layout_width="@dimen/margin_size_120dp"
+        android:layout_height="60dp"
+        android:background="@color/index_main"
+        android:enabled="false"
+        android:text="获取短信验证码"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:layout_alignBottom="@+id/et_code"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

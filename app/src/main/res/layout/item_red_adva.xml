@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_lin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/line2"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_size_4dp"
+        android:background="@color/line2">
+
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_80dp"
+        android:layout_marginLeft="@dimen/margin_size_6dp"
+        android:layout_marginRight="@dimen/margin_size_6dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/item_red_two_img"
+            android:layout_width="@dimen/margin_size_70dp"
+            android:layout_height="@dimen/margin_size_100dp"
+            android:paddingBottom="@dimen/margin_size_20dp"
+            android:paddingTop="@dimen/margin_size_20dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/test" />
+
+        <TextView
+            android:id="@+id/item_red_two_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_red_two_img"
+            android:layout_marginLeft="@dimen/margin_size_10dp"
+            android:layout_marginTop="@dimen/margin_size_8dp"
+            android:layout_toRightOf="@+id/item_red_two_img"
+            android:text="翔安新晃是假证红包"
+            android:textSize="@dimen/font_size_13sp" />
+
+        <LinearLayout
+            android:layout_width="@dimen/margin_size_300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/item_red_two_img"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_size_8dp">
+
+            <Button
+                android:id="@+id/red_button"
+                android:layout_width="@dimen/margin_size_60dp"
+                android:layout_height="@dimen/margin_size_30dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="@dimen/margin_size_10dp"
+                android:background="@drawable/corner_white_5dp_red"
+                android:text="领红包"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_red_two_img"
+            android:layout_toRightOf="@+id/item_red_two_img"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_size_8dp">
+
+            <TextView
+                android:id="@+id/item_shop_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_marginBottom="@dimen/margin_size_8dp"
+                android:layout_marginLeft="@dimen/margin_size_4dp"
+                android:text="20.71公里sdfsdfsdsdfdfdfdfdfsdfsdfsdfdfdfsdfsdffssdfsdfsd"
+                android:textSize="@dimen/font_size_13sp"
+                android:maxEms="13"
+                android:ellipsize="end"
+                android:singleLine="true"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_1dp"
+        android:background="@color/line2" />
+</LinearLayout>
