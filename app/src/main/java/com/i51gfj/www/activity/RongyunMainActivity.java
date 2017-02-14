@@ -5,7 +5,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.*;
+import android.os.Bundle;
 import android.os.Process;
 import android.view.KeyEvent;
 import android.view.View;
@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import com.i51gfj.www.R;
 
+import cn.jpush.android.api.JPushInterface;
 import io.rong.imkit.RongIM;
 import io.rong.imlib.model.Conversation;
 
@@ -99,6 +100,16 @@ public class RongyunMainActivity extends Activity implements View.OnClickListene
         }
 
         return false;
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        JPushInterface.onResume(this);
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        JPushInterface.onPause(this);
     }
 }
 

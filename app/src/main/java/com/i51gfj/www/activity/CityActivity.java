@@ -11,11 +11,8 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.google.gson.Gson;
-
 import com.i51gfj.www.R;
 import com.i51gfj.www.adapter.SortAdapter;
-import com.i51gfj.www.constant.MyURL;
 import com.i51gfj.www.dialog.LoadingDialog;
 import com.i51gfj.www.fragment.IndexFragment;
 import com.i51gfj.www.model.CityWrapper;
@@ -26,16 +23,13 @@ import com.i51gfj.www.view.sortlistview.ClearEditText;
 import com.i51gfj.www.view.sortlistview.PinyinComparator;
 import com.i51gfj.www.view.sortlistview.SideBar;
 import com.i51gfj.www.view.sortlistview.SortModel;
-import com.ta.utdid2.android.utils.StringUtils;
 import com.umeng.analytics.MobclickAgent;
-import com.zhy.http.okhttp.OkHttpUtils;
-import com.zhy.http.okhttp.callback.Callback;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import okhttp3.Call;
-import okhttp3.Response;
+
+import cn.jpush.android.api.JPushInterface;
 
 /**
  * 选择城市
@@ -256,11 +250,13 @@ public class CityActivity extends Activity {
     protected void onResume() {
         super.onResume();
         MobclickAgent.onResume(this);
+        JPushInterface.onResume(this);
     }
 
     @Override
     protected void onPause() {
         super.onPause();
         MobclickAgent.onPause(this);
+        JPushInterface.onPause(this);
     }
 }

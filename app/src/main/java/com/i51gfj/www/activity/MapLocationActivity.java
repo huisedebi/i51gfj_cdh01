@@ -37,6 +37,7 @@ import com.i51gfj.www.util.Tool;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.jpush.android.api.JPushInterface;
 import io.rong.message.LocationMessage;
 
 public class MapLocationActivity extends AppCompatActivity {
@@ -161,6 +162,8 @@ public class MapLocationActivity extends AppCompatActivity {
         super.onResume();
         //在activity执行onResume时执行mMapView. onResume ()，实现地图生命周期管理
         mMapView.onResume();
+        JPushInterface.onResume(this);
+
     }
 
     @Override
@@ -168,7 +171,10 @@ public class MapLocationActivity extends AppCompatActivity {
         super.onPause();
         //在activity执行onPause时执行mMapView. onPause ()，实现地图生命周期管理
         mMapView.onPause();
+        JPushInterface.onPause(this);
+
     }
+
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {

@@ -1,4 +1,5 @@
 package com.i51gfj.www.activity;
+
 import android.content.Intent;
 import android.graphics.Rect;
 import android.net.Uri;
@@ -12,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.google.gson.Gson;
 import com.i51gfj.www.R;
 import com.i51gfj.www.adapter.ShopDetailAdapter;
@@ -28,10 +30,13 @@ import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.Callback;
+
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import java.io.IOException;
 
+import cn.jpush.android.api.JPushInterface;
 import io.rong.imkit.RongIM;
 import io.rong.imlib.RongIMClient;
 import okhttp3.Call;
@@ -131,20 +136,15 @@ public class ShopDetailActivity extends FragmentActivity implements View.OnClick
 
 
 
-	/**
-	 * 方法必须重写
-	 */
 	@Override
 	protected void onResume() {
 		super.onResume();
+		JPushInterface.onResume(this);
 	}
-
-	/**
-	 * 方法必须重写
-	 */
 	@Override
 	protected void onPause() {
 		super.onPause();
+		JPushInterface.onPause(this);
 	}
 
 	/**
@@ -448,4 +448,6 @@ public class ShopDetailActivity extends FragmentActivity implements View.OnClick
 
 				});
 	}
+
+
 }

@@ -31,6 +31,7 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 
+import cn.jpush.android.api.JPushInterface;
 import okhttp3.Call;
 import okhttp3.Response;
 
@@ -190,11 +191,16 @@ public class ShopDetailCommentActivity extends FragmentActivity implements View.
     protected void onResume() {
         super.onResume();
         MobclickAgent.onResume(this);
+        JPushInterface.onResume(this);
+
     }
 
     @Override
     protected void onPause() {
         super.onPause();
         MobclickAgent.onPause(this);
+        JPushInterface.onPause(this);
+
     }
+
 }

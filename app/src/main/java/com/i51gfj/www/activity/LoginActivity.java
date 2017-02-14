@@ -8,7 +8,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 
-
 import com.i51gfj.www.R;
 import com.i51gfj.www.fragment.ForgotFragment;
 import com.i51gfj.www.fragment.LoginFragment;
@@ -18,6 +17,8 @@ import com.i51gfj.www.impl.MyCallBack;
 import com.umeng.analytics.MobclickAgent;
 
 import java.util.ArrayList;
+
+import cn.jpush.android.api.JPushInterface;
 
 
 /**
@@ -187,12 +188,17 @@ public class LoginActivity extends FragmentActivity implements MyCallBack {
     protected void onResume() {
         super.onResume();
         MobclickAgent.onResume(this);
+        JPushInterface.onResume(this);
+
     }
 
     @Override
     protected void onPause() {
         super.onPause();
         MobclickAgent.onPause(this);
+        JPushInterface.onPause(this);
+
     }
+
 }
 

@@ -1,8 +1,6 @@
 package com.i51gfj.www.activity;
 
 
-import java.util.ArrayList;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +12,10 @@ import com.i51gfj.www.view.ViewLeft;
 import com.i51gfj.www.view.ViewMiddle;
 import com.i51gfj.www.view.ViewRight;
 import com.umeng.analytics.MobclickAgent;
+
+import java.util.ArrayList;
+
+import cn.jpush.android.api.JPushInterface;
 
 
 public class DetailStoreActivity extends Activity {
@@ -121,11 +123,14 @@ public class DetailStoreActivity extends Activity {
 	protected void onResume() {
 		super.onResume();
 		MobclickAgent.onResume(this);
+		JPushInterface.onResume(this);
 	}
 
 	@Override
 	protected void onPause() {
 		super.onPause();
 		MobclickAgent.onPause(this);
+		JPushInterface.onPause(this);
 	}
+
 }

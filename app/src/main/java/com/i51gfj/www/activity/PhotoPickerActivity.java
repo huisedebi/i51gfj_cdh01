@@ -1,4 +1,5 @@
 package com.i51gfj.www.activity;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -50,6 +51,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+
+import cn.jpush.android.api.JPushInterface;
 
 /**
  * Created on 2016/4/12
@@ -492,11 +495,15 @@ public class PhotoPickerActivity extends AppCompatActivity implements LoaderMana
     protected void onResume() {
         super.onResume();
         MobclickAgent.onResume(this);
+        JPushInterface.onResume(this);
+
     }
 
     @Override
     protected void onPause() {
         super.onPause();
         MobclickAgent.onPause(this);
+        JPushInterface.onPause(this);
+
     }
 }

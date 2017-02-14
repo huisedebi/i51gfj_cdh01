@@ -1,7 +1,5 @@
 package com.i51gfj.www.activity;
 
-import android.app.Activity;
-
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
@@ -20,10 +18,12 @@ import com.baidu.mapapi.map.MarkerOptions;
 import com.baidu.mapapi.map.OverlayOptions;
 import com.baidu.mapapi.model.LatLng;
 import com.baidu.mapapi.utils.route.BaiduMapRoutePlan;
+import com.baidu.mapapi.utils.route.RouteParaOption;
 import com.i51gfj.www.R;
 import com.i51gfj.www.util.ShpfUtil;
-import com.baidu.mapapi.utils.route.RouteParaOption;
 import com.i51gfj.www.util.Util;
+
+import cn.jpush.android.api.JPushInterface;
 
 public class BNDemoMainActivity extends FragmentActivity implements View.OnClickListener{
 
@@ -104,12 +104,14 @@ public class BNDemoMainActivity extends FragmentActivity implements View.OnClick
     @Override
     protected void onPause() {
         mMapView.onPause();
+        JPushInterface.onPause(this);
         super.onPause();
     }
 
     @Override
     protected void onResume() {
         mMapView.onResume();
+        JPushInterface.onResume(this);
         super.onResume();
     }
 

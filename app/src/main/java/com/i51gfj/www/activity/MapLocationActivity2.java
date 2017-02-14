@@ -41,6 +41,7 @@ import com.umeng.analytics.MobclickAgent;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.jpush.android.api.JPushInterface;
 import io.rong.message.LocationMessage;
 
 public class MapLocationActivity2 extends AppCompatActivity {
@@ -524,6 +525,8 @@ public class MapLocationActivity2 extends AppCompatActivity {
         mMapView.onResume();
         super.onResume();
         MobclickAgent.onResume(this);
+        JPushInterface.onResume(this);
+
     }
 
     @Override
@@ -531,5 +534,9 @@ public class MapLocationActivity2 extends AppCompatActivity {
         mMapView.onPause();
         super.onPause();
         MobclickAgent.onPause(this);
+        JPushInterface.onPause(this);
+
     }
+
+
 }

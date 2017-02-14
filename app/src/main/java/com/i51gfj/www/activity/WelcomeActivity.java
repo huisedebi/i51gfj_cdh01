@@ -132,7 +132,6 @@ public class WelcomeActivity extends Activity implements Runnable {
     }
 
 
-
     public void post_jpush(String cityName) {
         JSONObject json = new JSONObject();
         try {
@@ -185,7 +184,6 @@ public class WelcomeActivity extends Activity implements Runnable {
                     }
                 });
     }
-
 
 
     /**
@@ -241,11 +239,16 @@ public class WelcomeActivity extends Activity implements Runnable {
     protected void onResume() {
         super.onResume();
         MobclickAgent.onResume(this);
+        JPushInterface.onResume(this);
+
     }
 
     @Override
     protected void onPause() {
         super.onPause();
         MobclickAgent.onPause(this);
+        JPushInterface.onPause(this);
+
     }
+
 }

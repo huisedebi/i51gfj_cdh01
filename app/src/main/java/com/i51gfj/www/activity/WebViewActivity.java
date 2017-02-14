@@ -13,6 +13,8 @@ import android.widget.TextView;
 import com.i51gfj.www.R;
 import com.umeng.analytics.MobclickAgent;
 
+import cn.jpush.android.api.JPushInterface;
+
 
 public class WebViewActivity extends FragmentActivity implements View.OnClickListener {
     WebView webview;
@@ -67,11 +69,15 @@ public class WebViewActivity extends FragmentActivity implements View.OnClickLis
     protected void onResume() {
         super.onResume();
         MobclickAgent.onResume(this);
+        JPushInterface.onResume(this);
+
     }
 
     @Override
     protected void onPause() {
         super.onPause();
         MobclickAgent.onPause(this);
+        JPushInterface.onPause(this);
+
     }
 }

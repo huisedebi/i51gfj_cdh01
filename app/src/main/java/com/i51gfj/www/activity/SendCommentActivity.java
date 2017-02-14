@@ -3,7 +3,6 @@ package com.i51gfj.www.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.support.v7.widget.LinearLayoutManager;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
@@ -13,14 +12,10 @@ import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.i51gfj.www.R;
-import com.i51gfj.www.adapter.ShopDetailCommentAdapter;
 import com.i51gfj.www.constant.MyURL;
-import com.i51gfj.www.fragment.BaseFragment;
 import com.i51gfj.www.model.ShopDetailBean;
-import com.i51gfj.www.model.ShopDetailCommentWrapper;
 import com.i51gfj.www.model.UserInfo;
 import com.i51gfj.www.util.ShpfUtil;
-import com.i51gfj.www.view.FullyLinearLayoutManager;
 import com.umeng.analytics.MobclickAgent;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.Callback;
@@ -30,6 +25,7 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 
+import cn.jpush.android.api.JPushInterface;
 import okhttp3.Call;
 import okhttp3.Response;
 
@@ -157,11 +153,16 @@ public class SendCommentActivity extends FragmentActivity implements View.OnClic
     protected void onResume() {
         super.onResume();
         MobclickAgent.onResume(this);
+        JPushInterface.onResume(this);
+
     }
 
     @Override
     protected void onPause() {
         super.onPause();
         MobclickAgent.onPause(this);
+        JPushInterface.onPause(this);
+
     }
+
 }

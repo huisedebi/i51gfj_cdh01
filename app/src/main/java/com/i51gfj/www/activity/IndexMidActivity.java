@@ -1,14 +1,18 @@
 package com.i51gfj.www.activity;
+
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.widget.LinearLayout;
+
 import com.i51gfj.www.R;
 import com.i51gfj.www.fragment.BaseFragment;
 import com.i51gfj.www.fragment.RedListFragment;
 import com.i51gfj.www.fragment.ShopDetailFragment;
 import com.i51gfj.www.fragment.ShopFragment;
 import com.umeng.analytics.MobclickAgent;
+
+import cn.jpush.android.api.JPushInterface;
 
 /**
  * Created by Administrator on 2016/8/17.中间层跳转
@@ -84,12 +88,14 @@ public class IndexMidActivity extends FragmentActivity {
     protected void onResume() {
         super.onResume();
         MobclickAgent.onResume(this);
+        JPushInterface.onResume(this);
     }
 
     @Override
     protected void onPause() {
         super.onPause();
         MobclickAgent.onPause(this);
+        JPushInterface.onPause(this);
     }
 }
 

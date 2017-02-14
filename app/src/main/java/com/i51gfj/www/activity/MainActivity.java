@@ -1,14 +1,9 @@
 package com.i51gfj.www.activity;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.os.Process;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
@@ -16,17 +11,13 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.i51gfj.www.DemoContext;
 import com.i51gfj.www.R;
 import com.i51gfj.www.application.MyApplication;
 import com.i51gfj.www.fragment.IndexFragment;
 import com.i51gfj.www.fragment.MineFragment;
 import com.i51gfj.www.fragment.MineSendRedFragment;
 import com.i51gfj.www.fragment.MsgFragment;
-import com.i51gfj.www.fragment.ShopFragment;
-import com.i51gfj.www.fragment.ShopInfoFragment;
 import com.i51gfj.www.model.UserInfo;
 import com.i51gfj.www.util.AppUtil;
 import com.i51gfj.www.util.ShpfUtil;
@@ -37,6 +28,7 @@ import com.umeng.analytics.MobclickAgent;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.jpush.android.api.JPushInterface;
 import io.rong.imkit.RongIM;
 import io.rong.imkit.fragment.ConversationListFragment;
 import io.rong.imlib.RongIMClient;
@@ -369,11 +361,15 @@ public class MainActivity extends FragmentActivity {
    protected void onResume() {
        super.onResume();
        MobclickAgent.onResume(this);
+       JPushInterface.onResume(this);
+
    }
 
     @Override
     protected void onPause() {
         super.onPause();
         MobclickAgent.onPause(this);
+        JPushInterface.onPause(this);
+
     }
 }

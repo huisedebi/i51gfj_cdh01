@@ -1,54 +1,30 @@
 package com.i51gfj.www.activity;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.baidu.location.BDLocation;
-import com.baidu.location.BDLocationListener;
 import com.baidu.location.LocationClient;
-import com.baidu.mapapi.map.BitmapDescriptorFactory;
-import com.baidu.mapapi.map.MapStatusUpdate;
-import com.baidu.mapapi.map.MapStatusUpdateFactory;
 import com.baidu.mapapi.map.MapView;
-import com.baidu.mapapi.map.Marker;
-import com.baidu.mapapi.map.MarkerOptions;
-import com.baidu.mapapi.map.OverlayOptions;
-import com.baidu.mapapi.model.LatLng;
 import com.baidu.mapapi.search.core.PoiInfo;
-import com.baidu.mapapi.utils.CoordinateConverter;
-import com.google.gson.Gson;
 import com.i51gfj.www.R;
-import com.i51gfj.www.constant.MyURL;
-import com.i51gfj.www.impl.LocationListener2;
 import com.i51gfj.www.impl.MyOnMapStatusChangeListener;
 import com.i51gfj.www.model.SearchWrapper;
-import com.i51gfj.www.util.ShpfUtil;
-import com.zhy.http.okhttp.OkHttpUtils;
-import com.zhy.http.okhttp.callback.Callback;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import okhttp3.Call;
-import okhttp3.Response;
+import cn.jpush.android.api.JPushInterface;
 
 public class BDpoiActivity extends Activity implements View.OnClickListener {
 
@@ -199,12 +175,14 @@ public class BDpoiActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onPause() {
         mMapView.onPause();
+        JPushInterface.onPause(this);
         super.onPause();
     }
 
     @Override
     protected void onResume() {
         mMapView.onResume();
+        JPushInterface.onResume(this);
         super.onResume();
     }
 
@@ -216,4 +194,5 @@ public class BDpoiActivity extends Activity implements View.OnClickListener {
         mMapView = null;
         super.onDestroy();
     }
+
 }

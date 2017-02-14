@@ -15,6 +15,7 @@ import com.i51gfj.www.adapter.ContactsAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.jpush.android.api.JPushInterface;
 import io.rong.imkit.RongIM;
 import io.rong.imlib.RongIMClient;
 
@@ -97,6 +98,16 @@ public class ContactsActivity extends Activity implements AdapterView.OnItemClic
 
                 }
             });
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        JPushInterface.onResume(this);
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        JPushInterface.onPause(this);
     }
 }
 

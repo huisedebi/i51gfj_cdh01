@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 import com.i51gfj.www.R;
 
+import cn.jpush.android.api.JPushInterface;
+
 
 public class WebViewActivity2 extends FragmentActivity implements View.OnClickListener {
     WebView webview;
@@ -62,10 +64,11 @@ public class WebViewActivity2 extends FragmentActivity implements View.OnClickLi
     @Override
     protected void onResume() {
         super.onResume();
+        JPushInterface.onResume(this);
     }
-
     @Override
     protected void onPause() {
         super.onPause();
+        JPushInterface.onPause(this);
     }
 }

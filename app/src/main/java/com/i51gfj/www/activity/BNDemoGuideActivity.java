@@ -19,6 +19,8 @@ import com.i51gfj.www.R;
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.jpush.android.api.JPushInterface;
+
 /**
  * 诱导界面
  *
@@ -89,6 +91,7 @@ public class BNDemoGuideActivity extends Activity {
         } else {
             BNRouteGuideManager.getInstance().onResume();
         }
+        JPushInterface.onResume(this);
     }
 
     protected void onPause() {
@@ -100,6 +103,7 @@ public class BNDemoGuideActivity extends Activity {
         } else {
             BNRouteGuideManager.getInstance().onPause();
         }
+        JPushInterface.onPause(this);
     }
 
     @Override
@@ -249,4 +253,6 @@ public class BNDemoGuideActivity extends Activity {
         final static String KEY_TYPE_KEYCODE = "keyCode";
         final static String KEY_TYPE_EVENT = "event";
     }
+
+
 }
