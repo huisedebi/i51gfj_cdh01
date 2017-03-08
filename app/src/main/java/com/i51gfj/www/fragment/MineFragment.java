@@ -3,10 +3,6 @@ package com.i51gfj.www.fragment;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.os.Bundle;
-import android.os.Process;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -16,7 +12,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bumptech.glide.load.resource.bitmap.CenterCrop;
 import com.google.gson.Gson;
 import com.i51gfj.www.R;
 import com.i51gfj.www.activity.LoginActivity;
@@ -24,10 +19,8 @@ import com.i51gfj.www.activity.MainActivity;
 import com.i51gfj.www.activity.MineMidActivity;
 import com.i51gfj.www.activity.MineMyCountActivity;
 import com.i51gfj.www.activity.PhotoPickerActivity;
-import com.i51gfj.www.application.MyApplication;
 import com.i51gfj.www.constant.MyURL;
 import com.i51gfj.www.manager.CacheManager;
-import com.i51gfj.www.model.MainBean;
 import com.i51gfj.www.model.MineIndexWrapper;
 import com.i51gfj.www.model.UserInfo;
 import com.i51gfj.www.model.UserInfoForMinFragementBean;
@@ -48,7 +41,6 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 
-import io.rong.imkit.RongIM;
 import okhttp3.Call;
 import okhttp3.Response;
 
@@ -378,27 +370,27 @@ public class MineFragment extends BaseFragment {
                     intent.putExtra("jump", "store_info");//商户信息
                     startActivity(intent);
                 } else {
-                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-                    builder.setMessage("您暂未开通年费会员，请先开通年费会员！");
-                    builder.setTitle("提示");
-                    builder.setPositiveButton("开通", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            // TODO Auto-generated method stub
-                            Intent intent2 = new Intent(mActivity, MineMidActivity.class);
-                            intent2.putExtra("jump", "open_hy");//开通会员
-                            startActivity(intent2);
-                        }
-                    });
-                    builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
-
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.dismiss();
-
-                        }
-                    });
-                    builder.create().show();
+//                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+//                    builder.setMessage("您暂未开通年费会员，请先开通年费会员！");
+//                    builder.setTitle("提示");
+//                    builder.setPositiveButton("开通", new DialogInterface.OnClickListener() {
+//                        @Override
+//                        public void onClick(DialogInterface dialog, int which) {
+//                            // TODO Auto-generated method stub
+                    Intent intent2 = new Intent(mActivity, MineMidActivity.class);
+                    intent2.putExtra("jump", "open_hy");//开通会员
+                    startActivity(intent2);
+//                        }
+//                    });
+//                    builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+//
+//                        @Override
+//                        public void onClick(DialogInterface dialog, int which) {
+//                            dialog.dismiss();
+//
+//                        }
+//                    });
+//                    builder.create().show();
                 }
                 break;
             case R.id.count_detail:

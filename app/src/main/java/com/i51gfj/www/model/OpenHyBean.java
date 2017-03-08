@@ -9,6 +9,15 @@ public class OpenHyBean {
    private String amount;
    private int status;
    private String info;
+   private String vipName;
+
+    public String getVipName() {
+        return vipName;
+    }
+
+    public void setVipName(String vipName) {
+        this.vipName = vipName;
+    }
 
     public String getAmount() {
         return amount;

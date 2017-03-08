@@ -7,13 +7,13 @@ android {
         ReleaseKey {
             keyAlias '我的梦想'
             keyPassword 'KEYSTORE_PASSWORD'
-            storeFile file('D:/app/release/mykey')
+            storeFile file('E:/app/release/mykey')
             storePassword 'KEY_PASSWORD'
         }
         DebugKey {
             keyAlias '我的梦想'
             keyPassword '198855'
-            storeFile file('D:/app/release/mykey')
+            storeFile file('E:/app/release/mykey')
             storePassword '198855'
         }
     }

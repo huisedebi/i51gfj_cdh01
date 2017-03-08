@@ -5,7 +5,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
+
 import com.i51gfj.www.R;
 import com.i51gfj.www.constant.Constants;
 import com.i51gfj.www.util.AppUtil;
@@ -48,7 +48,6 @@ public class WXPayEntryActivity extends Activity implements IWXAPIEventHandler {
 
 	@Override
 	public void onResp(BaseResp resp) {
-		Log.d(TAG, "onPayFinish, errCode = " + resp.errCode);
 
 
 		if (resp.getType() == ConstantsAPI.COMMAND_PAY_BY_WX) {

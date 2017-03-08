@@ -51,7 +51,8 @@ import okhttp3.Response;
  */
 public class OpenHYFragment extends BaseFragment {
     private UserInfo loginData;
-    TextView tv_title, tv_money, tv_one, tv_two, tv_three;
+    TextView tv_title, tv_money;
+//    TextView tv_one, tv_two, tv_three;
     ImageView img_zhifubao, img_weixin;
     Button open;
     LinearLayout layout_zhifubao, layout_weixin;
@@ -65,6 +66,7 @@ public class OpenHYFragment extends BaseFragment {
     private ZhiFuBaoBean zhifubao_data;
     private MyHandler mHandler;
     private static boolean can_upload = true;
+    private TextView mTvHuiYuan;
 
     @Override
     public int getLayout() {
@@ -75,11 +77,11 @@ public class OpenHYFragment extends BaseFragment {
     public void initView(View view) {
         tv_title = (TextView) view.findViewById(R.id.title_tv);
         view.findViewById(R.id.left_tv).setOnClickListener(this);
-        tv_title.setText("开通会员");
+        tv_title.setText("逛附近");
         tv_money = (TextView) view.findViewById(R.id.money);
-        tv_one = (TextView) view.findViewById(R.id.tv_one);
-        tv_two = (TextView) view.findViewById(R.id.tv_two);
-        tv_three = (TextView) view.findViewById(R.id.tv_three);
+//        tv_one = (TextView) view.findViewById(R.id.tv_one);
+//        tv_two = (TextView) view.findViewById(R.id.tv_two);
+//        tv_three = (TextView) view.findViewById(R.id.tv_three);
         img_zhifubao = (ImageView) view.findViewById(R.id.img_zhifubao);
         img_weixin = (ImageView) view.findViewById(R.id.img_weixin);
         open = (Button) view.findViewById(R.id.open);
@@ -88,6 +90,7 @@ public class OpenHYFragment extends BaseFragment {
         layout_zhifubao.setOnClickListener(this);
         layout_weixin = (LinearLayout) view.findViewById(R.id.layout_weixin);
         layout_weixin.setOnClickListener(this);
+        mTvHuiYuan = (TextView) view.findViewById(R.id.tvHuiYuan);
     }
 
     @Override
@@ -118,6 +121,7 @@ public class OpenHYFragment extends BaseFragment {
                     @Override
                     public OpenHyBean parseNetworkResponse(Response response) throws IOException {
                         String json = response.body().string();
+                        Log.e("OpenHYFragment", "OpenHYFragment--parseNetworkResponse--开通会员"+json);
                         return new Gson().fromJson(json, OpenHyBean.class);
                     }
 
@@ -138,11 +142,12 @@ public class OpenHYFragment extends BaseFragment {
     }
 
     private void setValue(OpenHyBean response) {
-        tv_money.setText(response.getAmount() + "/年");
-        if (response.getText() != null && response.getText().size() > 2)
-            tv_one.setText("1." + response.getText().get(0).getTitle());
-        tv_two.setText("2." + response.getText().get(1).getTitle());
-        tv_three.setText("3." + response.getText().get(2).getTitle());
+        tv_money.setText(response.getAmount() + " 元");
+//        if (response.getText() != null && response.getText().size() > 2)
+//            tv_one.setText("1." + response.getText().get(0).getTitle());
+//        tv_two.setText("2." + response.getText().get(1).getTitle());
+//        tv_three.setText("3." + response.getText().get(2).getTitle());
+        mTvHuiYuan.setText(response.getVipName());
     }
 
     @Override
@@ -211,18 +216,18 @@ public class OpenHYFragment extends BaseFragment {
                             weixin_data = response;
                             Util.closeLoading();
                             if (tag == 27) {//微信支付
-                                IWXAPI api= WXAPIFactory.createWXAPI(getActivity(), null);
+                                IWXAPI api = WXAPIFactory.createWXAPI(getActivity(), null);
                                 api.registerApp(response.getPay().getConfig().getAppid());
                                 PayReq request = new PayReq();
                                 request.appId = response.getPay().getConfig().getAppid();
                                 request.partnerId = response.getPay().getConfig().getPartnerid();
-                                request.prepayId= response.getPay().getConfig().getPackagevalue().split("=")[1];
+                                request.prepayId = response.getPay().getConfig().getPackagevalue().split("=")[1];
                                 request.packageValue = response.getPay().getConfig().getPackagevalue();
-                                request.nonceStr= response.getPay().getConfig().getNoncestr();
-                                request.timeStamp= response.getPay().getConfig().getTimestamp();
-                                request.sign= response.getPay().getConfig().getSign();
+                                request.nonceStr = response.getPay().getConfig().getNoncestr();
+                                request.timeStamp = response.getPay().getConfig().getTimestamp();
+                                request.sign = response.getPay().getConfig().getSign();
                                 api.sendReq(request);
-                                can_upload =true;
+                                can_upload = true;
                             }
                         }
                     }
@@ -291,7 +296,7 @@ public class OpenHYFragment extends BaseFragment {
         // 商品金额
         orderInfo += "&total_fee=" + "\"" + response.getAmount() + "\"";
         // 服务器异步通知页面路径
-        orderInfo += "&notify_url=" + "\"" + "http://www.51gfj.com/callback/payment/aliapp_notify.php" + "\"";
+        orderInfo += "&notify_url=" + "\"" + "https://www.guangfujin.cn/callback/payment/aliapp_notify.php" + "\"";
         // 服务接口名称， 固定值
         orderInfo += "&service=\"mobile.securitypay.pay\"";
         // 支付类型， 固定值
@@ -362,7 +367,7 @@ public class OpenHYFragment extends BaseFragment {
             String resultInfo = payResult.getResult();
             String resultStatus = payResult.getResultStatus();
             // 判断resultStatus 为“9000”则代表支付成功，具体状态码代表含义可参考接口文档
-            can_upload =true;
+            can_upload = true;
             if (TextUtils.equals(resultStatus, "9000")) {
                 Toast.makeText(mActivity, "支付成功", Toast.LENGTH_SHORT).show();
                 AppUtil.is_frash = true;
